@@ -8,39 +8,27 @@
 </head>
 <body>
 
-  <!-- Background GIF -->
+  <!-- Background -->
   <div class="bg"></div>
 
-  <!-- Music -->
-  <audio id="music" loop>
-    <source src="music.mp3" type="audio/mpeg">
-  </audio>
-
-  <!-- Profile Box -->
-  <div class="profile" onclick="playMusic()">
+  <!-- Profile Card -->
+  <div class="profile">
     <div class="avatar">
-      <img src="maous.png" alt="Ảnh đại diện" />
+      <img src="maous.png" alt="Maous Lucifer" />
     </div>
 
     <h1 class="name">Maous Lucifer</h1>
-    <p class="title">Full-stack Developer</p>
-    <p class="bio">YeuEmNhieuLam</p>
+    <p class="bio">Full-stack Developer</p>
 
-    <div class="social">
+    <div class="links">
       <a href="https://www.facebook.com/profile.php?id=61565069948685" target="_blank">Facebook</a>
       <a href="https://discord.gg/ke2UYP4ArC" target="_blank">Discord</a>
+      <a href="#">GitHub</a>
+      <a href="#">Website</a>
     </div>
 
-    <span class="hint">Click anywhere to enable music</span>
+    <span class="footer">© Maous Lucifer</span>
   </div>
-
-<script>
-function playMusic() {
-  const music = document.getElementById("music");
-  music.volume = 0.5;
-  music.play();
-}
-</script>
 
 </body>
 </html>
