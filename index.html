@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile của Maous</title>
+  <title>Maous Lucifer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="profile">
+
+  <!-- Background GIF -->
+  <div class="bg"></div>
+
+  <!-- Music -->
+  <audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Profile Box -->
+  <div class="profile" onclick="playMusic()">
     <div class="avatar">
       <img src="maous.png" alt="Ảnh đại diện" />
     </div>
+
     <h1 class="name">Maous Lucifer</h1>
     <p class="title">Full-stack Developer</p>
     <p class="bio">YeuEmNhieuLam</p>
@@ -19,6 +30,17 @@
       <a href="https://www.facebook.com/profile.php?id=61565069948685" target="_blank">Facebook</a>
       <a href="https://discord.gg/ke2UYP4ArC" target="_blank">Discord</a>
     </div>
+
+    <span class="hint">Click anywhere to enable music</span>
   </div>
+
+<script>
+function playMusic() {
+  const music = document.getElementById("music");
+  music.volume = 0.5;
+  music.play();
+}
+</script>
+
 </body>
 </html>
